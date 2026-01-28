@@ -1,0 +1,126 @@
+header,
+nav {
+  background-color: rgb(1, 1, 65);
+  color: white;
+  position: fixed;
+  z-index: 100;
+}
+header button,
+#get-qoute {
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.559),
+    rgb(1, 116, 1),
+    rgb(1, 158, 1),
+    rgb(1, 116, 1)
+  );
+  transition: background-image 0.5s ease;
+}
+header button:hover,
+#get-qoute:hover {
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.454),
+    rgba(1, 68, 1, 0.749),
+    rgb(1, 158, 1),
+    rgb(1, 116, 1)
+  );
+}
+#nav {
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+}
+#get-qoute {
+  color: white;
+}
+#call {
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.486),
+    rgb(209, 207, 207),
+    rgb(210, 210, 210),
+    rgb(216, 214, 214)
+  );
+  transition:
+    background-image 0.5s ease,
+    color 0.5s ease;
+}
+#call:hover {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(209, 207, 207),
+    rgb(192, 192, 192),
+    rgb(159, 159, 159),
+    rgba(75, 74, 74, 0.68)
+  );
+}
+#trusted,
+#insured {
+  background-image: url(pics/bg-sky.PNG);
+  background-size: 100% 13vh;
+  background-repeat: no-repeat;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+  transition: box-shadow 0.6s ease;
+}
+#trusted:hover,
+#insured:hover {
+  box-shadow: 0 11px 22px rgba(0, 0, 0, 0.9);
+}
+.bg-transition {
+  background: linear-gradient(to bottom, white, #507bad);
+}
+/* what we clean */
+#what-we-clean {
+  background-image: url(pics/What-we-clean.PNG);
+  background-repeat: no-repeat;
+}
+#card-page2 {
+  background: rgba(255, 255, 255, 0.158);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+}
+#img-page2 {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+#card-page2:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* standerd section */
+#standerd-section {
+  background-image: url(pics/standerd-section2.PNG);
+  background-size: 100% 105vh;
+}
+#Standard-card {
+  background: rgba(255, 255, 255, 0.151);
+  backdrop-filter: blur(4px);
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+}
+#Standard-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.7);
+}
+#p-standard {
+  color: black;
+  text-shadow:
+    8px 6px 5px rgb(253, 252, 252),
+    -8px -6px 5px white;
+}
+/* footer */
+footer {
+  background-color: rgb(1, 1, 65);
+}
+#quick-link {
+  transition: letter-spacing 0.5s ease;
+}
+#quick-link:hover {
+  letter-spacing: 3px;
+}
