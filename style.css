@@ -95,6 +95,9 @@ header button:hover,
   background-image: url(pics/standerd-section2.PNG);
   background-size: 100% 105vh;
 }
+#standerd-section-about {
+  background-image: url(pics/standerd-section2.PNG);
+}
 #Standard-card {
   background: rgba(255, 255, 255, 0.151);
   backdrop-filter: blur(4px);

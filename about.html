@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HiRise Cleaning Service</title>
+    <link rel="icon" type="image/png" href="pics/favicon.PNG" sizes="32x32" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@600&family=Inconsolata:wght@200..900&family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Licorice&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Momo+Signature&family=Pacifico&family=Permanent+Marker&family=Playwrite+NO:wght@100..400&family=Playwrite+US+Trad+Guides&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+</html>
+<body>
+  <!----------------------------------------------------------------------------------
+                            navbar
+   ----------------------------------------------------------------------------------->
+  <nav id="nav" class="w-full top-0 bg-white-100 flex justify-center mt-0 p-2">
+    <div
+      id="menu"
+      class="w-[100%] h-[10vh] sm:w-[100%] sm:h-[14vh] flex items-center"
+    >
+      <div class="w-[60%] h-[7vh] sm:w-[18%] sm:h-[13vh] sm:ml-[3%] sm:-mt-[0]">
+        <img
+          class="w-[100%] sm:w-[100%] h-[7vh] sm:h-[13vh] sm:-mt-[3%]"
+          src="pics/logo.png"
+          alt=""
+        />
+      </div>
+      <ul class="sm:flex hidden items-center space-x-7 sm:ml-[30%]">
+        <li>
+          <a href="index.html" class="text-[#020267]">Home</a>
+        </li>
+        <li>
+          <a href="about.html" class="text-[#020267]">About</a>
+        </li>
+        <li>
+          <a href="#" class="text-[#020267]">Apartments</a>
+        </li>
+        <li>
+          <a href="Services.html" class="text-[#020267]">Services</a>
+        </li>
+        <li>
+          <a href="#" class="text-[#020267]">Contact</a>
+        </li>
+        <button
+          id="get-qoute"
+          class="ml-[2.5%] pl-3 pr-3 text-[1vw] rounded-lg p-3"
+        >
+          <a href="mailto:contact@hiriseclean.com"> Get a Quote </a>
+        </button>
+      </ul>
+      <button
+        onclick="toggleMenu()"
+        class="text-[#020267] flex sm:hidden ml-[70%]"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+    <div
+      id="responsiveMenu"
+      class="absolute top-full left-0 w-full bg-white shadow-lg hidden sm:hidden"
+    >
+      <ul class="flex flex-col divide-y p-3">
+        <li>
+          <a href="index.html" class="text-[#020267]">Home</a>
+        </li>
+        <li>
+          <a href="about.html" class="text-[#020267]">About</a>
+        </li>
+        <li>
+          <a href="#" class="text-[#020267]">Apartments</a>
+        </li>
+        <li>
+          <a href="Services.html" class="text-[#020267]">Services</a>
+        </li>
+        <li>
+          <a href="#" class="text-[#020267]">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-----------------------------------------------------------------------------------
+                          Hero Section
+   ------------------------------------------------------------------------------------>
+  <div
+    id="hero"
+    class="bg-[url('pics/mobile-bg.PNG')] bg-[length:100%_auto] sm:bg-[url('pics/background-about-page.PNG')] sm:bg-[length:100%_90vh] mt-[8%] w-[100%] h-auto sm:w-[100%] sm:h-[90vh] flex flex-col sm:flex sm:flex-row sm:justify-start justify-center items-center p-0 overflow-y-visibile sm:overflow-y-hidden"
+  >
+    <div
+      class="sm:w-[55%] sm:h-[100vh] p-3 flex flex-col sm:flex sm:flex-col items-start sm:mt-[-5%] mt-[25%] p-5"
+    >
+      <h1
+        class="text-[#020267] text-[5vw] sm:mt-[15%] sm:text-3xl font-bold tracking-wider sm:ml-[10%]"
+      >
+        About HiRise Cleaning Services
+      </h1>
+
+      <p
+        class="mt-1 text-[#070707] sm:mt-5 sm:text-lg text-[3vw] sm:ml-[10%] z-50 sm:w-[90%]"
+      >
+        At Hi-Rise Cleaning Services, we specialize in delivering spotless,
+        move-in ready apartments and beautifully maintained residential units
+        across the Dallas–Plano–Frisco area. We understand that first
+        impressions matter — whether for new residents moving in, tenants moving
+        out, or property managers preparing units for the next lease.
+      </p>
+      <p
+        class="mt-3 text-[#070707] sm:text-lg sm:ml-[10%] z-50 text-[3.1vw] sm:w-[80%]"
+      >
+        Our team provides reliable, high-quality interior cleaningdesigned
+        specifically for apartment communities, leasing offices, and residential
+        buildings. From standard recurring cleaning to deep cleans, move-out
+        services, and turn-key make-ready preparation, we ensure every unit is
+        fresh, sanitized, and ready to welcome its next occupant
+      </p>
+    </div>
+
+    <div
+      class="bg-gradient-to-b from-[#d7e6ff] to-[#cfe0ff] w-[100%] mt-0 sm:mt-[19.5%] flex sm:hidden"
+      id="img-hero"
+    >
+      <div class="image-wrapper w-[110%] sm:h-[110vh] h-auto">
+        <img
+          class="w-[100%] h-auto"
+          src="pics/responsive-about-bg.PNG"
+          alt="image"
+        />
+      </div>
+    </div>
+  </div>
+  <!---------------------------------------------------------------------------------
+                          what make us different
+  ----------------------------------------------------------------------------------->
+  <div
+    id="what-we-clean"
+    class="w-[100%] bg-[url('pics/What-we-clean.PNG')] h-auto sm:w-[100%] sm:bg-[length:100%_83vh] bg-[length:100%_132vh] sm:h-[75vh] flex flex-col sm:flex sm:flex-col items-center sm:gap-0 pb-4 gap-5 p-0 pl-0 mt-[0%] sm:mt-0 z-50"
+  >
+    <div
+      class="flex flex-col sm:flex sm:flex-col items-center sm:w-[60%] w-[100%] p-5 sm:mt-0 mt-[10%]"
+    >
+      <h2 class="text-[#020267] font-bold sm:text-3xl text-2xl tracking-wider">
+        What Make Us Different
+      </h2>
+    </div>
+    <div
+      class="flex flex-col sm:flex sm:flex-row sm:w-[100%] w-[100%] p-5 justify-center items-center flex-wrap gap-5 sm:gap-2"
+    >
+      <div
+        id="Standard-card"
+        class="flex flex-row sm:flex sm:flex-row w-[90%] h-[10vh] sm:w-[25%] justify-center items-center p-4 sm:h-[14vh] bg-red-400"
+      >
+        <img
+          class="sm:w-[25%] w-[35%] h-[10vh] sm:h-[10vh] -ml-[5%]"
+          src="pics/why-choose-us1-removebg-preview.png"
+          alt=""
+        />
+        <div class="flex flex-col">
+          <p
+            class="sm:text-[1.2vw] font-bold text-center text-[4vw] text-[#070707]"
+          >
+            Specialized in apartment interior cleaning
+          </p>
+        </div>
+      </div>
+      <div
+        id="Standard-card"
+        class="flex flex-row sm:flex sm:flex-row w-[90%] h-[10vh] sm:w-[25%] justify-center items-center p-4 sm:h-[14vh] bg-red-400"
+      >
+        <img
+          class="sm:w-[25%] w-[35%] h-[10vh] sm:h-[10vh] -ml-[5%]"
+          src="pics/professional-staff-removebg-preview.png"
+          alt=""
+        />
+        <div class="flex flex-col">
+          <p
+            class="sm:text-[1.2vw] font-bold text-center text-[4vw] text-[#070707]"
+          >
+            Professional, background-checked cleaning staff
+          </p>
+        </div>
+      </div>
+      <div
+        id="Standard-card"
+        class="flex flex-row sm:flex sm:flex-row w-[90%] h-[10vh] sm:w-[25%] justify-center items-center p-4 sm:h-[14vh] bg-red-400"
+      >
+        <img
+          class="sm:w-[30%] w-[35%] h-[10vh] sm:h-[13vh] -ml-[5%]"
+          src="pics/trusted-removebg-preview.png"
+          alt=""
+        />
+        <div class="flex flex-col">
+          <p
+            class="sm:text-[1.2vw] font-bold text-center text-[4vw] text-[#070707]"
+          >
+            Consistent quality and attention to detail
+          </p>
+        </div>
+      </div>
+      <div
+        id="Standard-card"
+        class="flex flex-row sm:flex sm:flex-row w-[90%] h-[10vh] sm:w-[25%] justify-center items-center p-4 sm:h-[14vh] bg-red-400"
+      >
+        <img
+          class="sm:w-[25%] w-[35%] h-[10vh] sm:h-[12vh] -ml-[5%]"
+          src="pics/FlexibleScheduling-removebg-preview.png"
+          alt=""
+        />
+        <div class="flex flex-col">
+          <p
+            class="sm:text-[1.2vw] font-bold text-center text-[4vw] text-[#070707]"
+          >
+            Flexible scheduling for property managers & leasing offices
+          </p>
+        </div>
+      </div>
+      <div
+        id="Standard-card"
+        class="flex flex-row sm:flex sm:flex-row w-[90%] h-[10vh] sm:w-[25%] justify-center items-center p-4 sm:h-[14vh] bg-red-400"
+      >
+        <img
+          class="sm:w-[25%] w-[35%] h-[10vh] sm:h-[10vh] -ml-[5%]"
+          src="pics/Eco-removebg-preview.png"
+          alt=""
+        />
+        <div class="flex flex-col">
+          <p
+            class="sm:text-[1.2vw] font-bold text-center text-[4vw] text-[#070707]"
+          >
+            Eco-friendly products available upon request
+          </p>
+        </div>
+      </div>
+      <div
+        id="Standard-card"
+        class="flex flex-row sm:flex sm:flex-row w-[90%] h-[10vh] sm:w-[25%] justify-center items-center p-4 sm:h-[14vh] bg-red-400"
+      >
+        <img
+          class="sm:w-[25%] w-[35%] h-[10vh] sm:h-[10vh] -ml-[4%]"
+          src="pics/on-time-removebg-preview.png"
+          alt=""
+        />
+        <div class="flex flex-col">
+          <p
+            class="sm:text-[1.2vw] font-bold text-center text-[4vw] text-[#070707]"
+          >
+            Fully equipped and ready for any size unit
+          </p>
+        </div>
+      </div>
+      <div
+        id="Standard-card"
+        class="flex flex-col sm:flex sm:flex-col w-[90%] h-[15vh] sm:mt-9 sm:w-[76%] justify-center items-center p-4 sm:h-[14vh]"
+      >
+        <h2
+          class="text-[#020267] font-semibold sm:text-3xl sm:-mt-[3%] text-2xl tracking-wider"
+        >
+          Our Mission
+        </h2>
+
+        <div class="flex flex-row justify-center items-center mt-0">
+          <img
+            class="sm:w-[10%] w-[30%] h-[10vh] sm:h-[10vh] -ml-[3%] sm:ml-[2%]"
+            src="pics/mission-removebg-preview.png"
+            alt=""
+          />
+          <p
+            class="sm:text-[1.2vw] sm:-ml-[2%] font-bold text-center w-[65%] text-[2.4vw] text-[#070707]"
+          >
+            To deliver reliable, high-quality cleaning that saves time, improves
+            property value, and creates welcoming living spaces for residents.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------------------------------------------------------------------------------
+                            who we serve
+    -------------------------------------------------------------------------------->
+  <div
+    id="standerd-section-about"
+    class="w-[100%] sm:bg-[length:100%_83vh] bg-[length:100%_152vh] h-auto sm:w-[100%] sm:h-[75vh] flex flex-col sm:flex sm:flex-col items-center justify-center p-4 pb-4"
+  >
+    <div
+      class="flex flex-col sm:flex sm:flex-row sm:w-[100%] w-[100%] p-5 justify-center items-center gap-5 sm:gap-2"
+    >
+      <div class="flex flex-col gap-4 justify-center items-center p-5">
+        <div id="Standard-card" class="sm:w-[100%] p-5">
+          <h2
+            class="text-[#020267] font-semibold sm:text-3xl sm:-mt-[3%] text-2xl tracking-wider"
+          >
+            Who We Serve
+          </h2>
+          <div class="flex flex-row items-center mt-9">
+            <i class="fa-solid fa-check text-green-800"></i
+            ><span class="text-[#070707]"> Apartment communities</span>
+          </div>
+          <div class="flex flex-row items-center mt-2">
+            <i class="fa-solid fa-check text-green-800"></i
+            ><span class="text-[#070707]"> Property management companies</span>
+          </div>
+          <div class="flex flex-row items-center mt-2">
+            <i class="fa-solid fa-check text-green-800"></i
+            ><span class="text-[#070707]"> Leasing offices</span>
+          </div>
+          <div class="flex flex-row items-center mt-2">
+            <i class="fa-solid fa-check text-green-800"></i
+            ><span class="text-[#070707]"> Residential building manag</span>
+          </div>
+          <div class="flex flex-row items-center mt-2">
+            <i class="fa-solid fa-check text-green-800"></i
+            ><span class="text-[#070707]">
+              Full interior cleaning of empty unit</span
+            >
+          </div>
+          <div class="flex flex-row items-center mt-2">
+            <i class="fa-solid fa-check text-green-800"></i
+            ><span class="text-[#070707]">
+              Full interior cleaning of empty unit</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-4 justify-center items-center p-5">
+        <div id="Standard-card" class="sm:w-[100%] p-5">
+          <h2
+            class="text-[#020267] font-semibold sm:text-3xl sm:-mt-[3%] text-2xl tracking-wider"
+          >
+            Our Promise
+          </h2>
+          <div class="flex flex-row items-center mt-9">
+            <i class="fa-solid fa-check text-green-800"></i
+            ><span class="text-[#070707]"> On-time arrival</span>
+          </div>
+          <div class="flex flex-row items-center mt-7">
+            <i class="fa-solid fa-check text-green-800"></i
+            ><span class="text-[#070707]"> Thorough, detailed cleaning</span>
+          </div>
+          <div class="flex flex-row items-center mt-7">
+            <i class="fa-solid fa-check text-green-800"></i
+            ><span class="text-[#070707]"> Friendly, professional service</span>
+          </div>
+          <div class="flex flex-row items-center mt-7">
+            <i class="fa-solid fa-check text-green-800"></i
+            ><span class="text-[#070707]">
+              Consistent results you can trust</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-[100%] sm:w-[100%] flex flex-col sm:flex sm:flex-col items-center justify-center sm:mt-3 mt-3"
+    >
+      <button
+        id="get-qoute"
+        class="sm:w-[25%] w-[80%] p-3 pl-3 pr-3 font-semibold rounded-lg"
+      >
+        <a href="tel:+18664174730">Get a Quote</a>
+      </button>
+      <p class="mt-2 text-center sm:text-lg text-[#f1f1f1f]"></p>
+    </div>
+  </div>
+  <!----------------------------------------------------------------------------------
+                           footer
+   ----------------------------------------------------------------------------------->
+  <footer
+    class="w-[100%] sm:w-[100%] h-auto sm:h-[40vh] flex flex-col sm:flex sm:flex-col justify-center items-center pt-[5%] p-5"
+  >
+    <div
+      class="w-[100%] sm:w-[100%] h-auto sm:h-[50vh] items-start justify-center flex flex-col sm:flex sm:flex-row"
+    >
+      <div
+        class="flex flex-col sm:flex sm:w-[30%] w-[100%] sm:flex-col sm:items-start"
+      >
+        <h2
+          class="text-[#ffff] text-[6vw] sm:text-left sm:text-2xl font-semibold tracking-wider"
+        >
+          Contact Info
+        </h2>
+        <div
+          class="flex flex-row sm:mt-[3%] mt-[2%] text-[#ffffff96] items-center"
+        >
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Plano, TX 75024</span>
+        </div>
+        <div class="flex flex-row text-[#ffffff96] items-center sm:w-[60%]">
+          <i class="fa-solid fa-phone ml-[1.5%]"></i
+          ><a href="tel:+18664174730"><span>866-447-4730</span></a>
+        </div>
+        <div class="flex flex-row text-[#ffffff96] items-center">
+          <i class="fa-solid fa-envelope ml-[2%]"></i
+          ><a href="mailto:contact@hiriseclean.com"
+            ><span>contact@hiriseclean.com</span></a
+          >
+        </div>
+        <div class="flex flex-row text-[#ffffff96] items-center">
+          <i class="fa-solid fa-earth-africa ml-[1.5%]"></i
+          ><a href="https://www.hiriseclean.com/ " target="_blank"
+            ><span>www.hiriseclean.com</span></a
+          >
+        </div>
+      </div>
+      <div
+        class="flex flex-col sm:flex sm:flex-col justify-center sm:items-left w-[100%] sm:w-[30%] ml-0 sm:ml-[0%] sm:mt-0 mt-[6%]"
+      >
+        <h2
+          class="text-[#ffff] text-[6vw] sm:text-left sm:text-2xl font-semibold tracking-wider"
+        >
+          Quick Links
+        </h2>
+        <a
+          id="quick-link"
+          href="index.html"
+          class="text-[#ffffff96] w-[10%] mt-[1%] sm:mt-[3%]"
+        >
+          Home
+        </a>
+        <a
+          id="quick-link"
+          href="Services.html"
+          class="text-[#ffffff96] w-[10%]"
+        >
+          Services
+        </a>
+        <a id="quick-link" href="about.html" class="text-[#ffffff96] w-[10%]"
+          >About</a
+        >
+        <a id="quick-link" href="" class="text-[#ffffff96] w-[10%]"
+          >Apartments</a
+        >
+      </div>
+      <div
+        class="sm:flex sm:flex-col flex flex-col justify-center sm:items-left items-center sm:w-[20%] w-[100%] h-[10vh] sm:h-[25vh] mt-4 sm:mt-0"
+      >
+        <div
+          class="sm:w-[100%] w-[60%] flex flex-col items-center justify-center"
+        >
+          <img class="w-[100%]" src="pics/logo.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col sm:flex flex-row justify-center items-center text-center text-[#ffffff40] mt-1 sm:mt-3"
+    >
+      <p>
+        <i class="fa-regular fa-copyright"></i
+        ><span
+          >2026 HiRise Cleaning Services, All right reserved.
+          <span>
+            Designed with <i class="fa-solid fa-heart text-red-500"></i> by
+            M-Ahmadii</span
+          ></span
+        >
+      </p>
+    </div>
+  </footer>
+</body>
