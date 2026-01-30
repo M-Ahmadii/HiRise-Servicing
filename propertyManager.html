@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="pm-wrap">
+      <div class="pm-card">
+        <div class="pm-head">
+          <h2>Property Manager Request</h2>
+          <p>Fill out the form and our team will contact you shortly.</p>
+        </div>
+
+        <form id="pmForm" class="pm-form">
+          <div class="pm-grid">
+            <div class="pm-field">
+              <label for="name">Full Name *</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="John Smith"
+                required
+              />
+            </div>
+
+            <div class="pm-field">
+              <label for="company">Company / Community</label>
+              <input
+                id="company"
+                name="company"
+                type="text"
+                placeholder="Apartment Community Name"
+              />
+            </div>
+
+            <div class="pm-field">
+              <label for="email">Email *</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="name@company.com"
+                required
+              />
+            </div>
+
+            <div class="pm-field">
+              <label for="phone">Phone *</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="(000) 000-0000"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="pm-field">
+            <label for="units">Estimated # of Units</label>
+            <input
+              id="units"
+              name="units"
+              type="number"
+              min="0"
+              placeholder="e.g. 12"
+            />
+          </div>
+
+          <div class="pm-field">
+            <label for="service">Service Type</label>
+            <select id="service" name="service">
+              <option value="Turnover / Make-Ready">
+                Turnover / Make-Ready
+              </option>
+              <option value="Standard Cleaning">Standard Cleaning</option>
+              <option value="Deep Cleaning">Deep Cleaning</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="pm-field">
+            <label for="message">Message *</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Tell us what you need..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="pm-actions">
+            <button type="submit" class="pm-btn" id="pmSubmit">
+              Send Request
+            </button>
+            <p class="pm-note">
+              By submitting, you agree to be contacted by Hi-Rise Cleaning
+              Services.
+            </p>
+          </div>
+
+          <div id="pmStatus" class="pm-status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+    <script src="js.js"></script>
+  </body>
+</html>

@@ -127,3 +127,180 @@ footer {
 #quick-link:hover {
   letter-spacing: 3px;
 }
+/* ***********************************************************************
+                           form
+**************************************************************************/
+.pm-wrap {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 16px;
+  background: linear-gradient(180deg, #f7fbff 0%, #eaf4ff 100%);
+}
+
+.pm-card {
+  width: min(720px, 100%);
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.pm-head {
+  padding: 28px 26px 18px;
+  background: linear-gradient(
+    90deg,
+    rgba(47, 111, 179, 0.1),
+    rgba(47, 111, 179, 0.03)
+  );
+}
+
+.pm-head h2 {
+  margin: 0;
+  font-size: 24px;
+  letter-spacing: 0.2px;
+  color: #0b1b2a;
+}
+
+.pm-head p {
+  margin: 8px 0 0;
+  color: #3e556b;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.pm-form {
+  padding: 22px 26px 28px;
+}
+
+.pm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  column-gap: 32px;
+}
+
+.pm-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.pm-field label {
+  font-size: 13px;
+  color: #1b2b3a;
+  font-weight: 600;
+}
+
+.pm-field input,
+.pm-field select,
+.pm-field textarea {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 12px 12px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s ease;
+  background: #fff;
+}
+
+.pm-field input:focus,
+.pm-field select:focus,
+.pm-field textarea:focus {
+  border-color: rgba(47, 111, 179, 0.55);
+  box-shadow: 0 0 0 4px rgba(47, 111, 179, 0.12);
+}
+
+.pm-actions {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pm-btn {
+  border: none;
+  border-radius: 12px;
+  padding: 13px 14px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  background: #2f6fb3;
+  color: white;
+  transition: 0.2s ease;
+}
+
+.pm-btn:hover {
+  transform: translateY(-1px);
+}
+.pm-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.pm-note {
+  margin: 0;
+  font-size: 12px;
+  color: #607486;
+}
+
+.pm-status {
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+@media (max-width: 640px) {
+  .pm-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .pm-wrap {
+    padding: 28px 14px;
+  }
+  .pm-head h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 640px) {
+  .pm-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .pm-head {
+    padding: 22px 16px 14px;
+  }
+
+  .pm-form {
+    padding: 18px 16px 22px;
+  }
+
+  .pm-head h2 {
+    font-size: 20px;
+  }
+
+  .pm-btn {
+    width: 100%;
+  }
+}
+
+/* Small phones */
+@media (max-width: 380px) {
+  .pm-head h2 {
+    font-size: 18px;
+  }
+
+  .pm-field input,
+  .pm-field select,
+  .pm-field textarea {
+    padding: 11px 10px;
+    font-size: 13px;
+  }
+}
