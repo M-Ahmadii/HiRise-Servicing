@@ -130,7 +130,7 @@ footer {
 /* ***********************************************************************
                            form
 **************************************************************************/
-.pm-wrap {
+/* .pm-wrap {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -291,7 +291,6 @@ footer {
   }
 }
 
-/* Small phones */
 @media (max-width: 380px) {
   .pm-head h2 {
     font-size: 18px;
@@ -303,4 +302,4 @@ footer {
     padding: 11px 10px;
     font-size: 13px;
   }
-}
+} */
