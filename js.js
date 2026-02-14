@@ -32,7 +32,7 @@ form.addEventListener("submit", async (e) => {
     phone: form.phone.value.trim(),
     units: form.units.value.trim(),
     service: form.service.value,
-    message: form.message.value.trim(),
+    // message: form.message.value.trim(),
   };
 
   try {
