@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
   <body>
     <section class="pm-wrap">
       <div class="pm-card">
@@ -79,7 +81,7 @@
               </option>
               <option value="Standard Cleaning">Standard Cleaning</option>
               <option value="Deep Cleaning">Deep Cleaning</option>
-              <option value="Other">Move-in / Move-out</option>
+              <option value="Move-in / Move-out">Move-in / Move-out</option>
             </select>
           </div>
 
@@ -108,6 +110,37 @@
         </form>
       </div>
     </section>
+    <script>
+      (function () {
+        emailjs.init("H9G4xCf8y1pcyGTCe");
+      })();
+
+      const form = document.getElementById("pmForm");
+      const status = document.getElementById("pmStatus");
+      const button = document.getElementById("pmSubmit");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        button.disabled = true;
+        button.innerText = "Sending...";
+
+        emailjs.sendForm("service_pei5mar", "template_dv420q9", this).then(
+          function () {
+            status.innerHTML = "✅ Request sent successfully!";
+            form.reset();
+            button.disabled = false;
+            button.innerText = "Send Request";
+          },
+          function (error) {
+            status.innerHTML = "❌ Failed to send. Try again.";
+            button.disabled = false;
+            button.innerText = "Send Request";
+            console.log(error);
+          },
+        );
+      });
+    </script>
     <script src="js.js"></script>
   </body>
 </html>
